@@ -1,0 +1,12 @@
+---
+- name: Playbook to demostrate directories creation
+  hosts: develenv
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Create development directory
+      file:
+        state: directory
+        recurse: yes
+        path: /home/javascriptWebsite/
