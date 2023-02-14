@@ -7,6 +7,11 @@
   tasks:
     - name: Create development directory
       file:
+        path: /home/javascriptWebsite
         state: directory
-        recurse: yes
-        path: /home/javascriptWebsite/
+        mode: 0755
+        
+    - name: Main javascript file
+      file:
+        path: /home/javascriptWebsite/main.js
+        state: touch
