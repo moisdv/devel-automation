@@ -7,11 +7,12 @@
   tasks:
     - name: Create development directory
       file:
-        path: /home/javascriptWebsite
+        path: /home/odoo/javascriptWebsite
         state: directory
+        recurse: yes
         mode: 0755
         
     - name: Main javascript file
       file:
-        path: /home/javascriptWebsite/main.js
+        path: /home/odoo/javascriptWebsite/main.js
         state: touch
