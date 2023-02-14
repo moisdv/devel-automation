@@ -1,6 +1,6 @@
 ---
 - name: Playbook to demostrate directories creation
-  hosts: develenv
+  hosts: all
   become: true
   gather_facts: false
 
